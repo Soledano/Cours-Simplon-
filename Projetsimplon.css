@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 * {margin: 0; padding: 0;}
@@ -20,5 +21,3 @@ footer {position: relative; background-color:rgb(104,104,104); width:100%; heigh
 .img2{grid-area: "img2"; margin-top: 15px;}
 .clic1{grid-area: "clic1"; border: 0.5px ;}
 .clic2{ grid-area: "clic2"; border: 0.5px ;} 
-
-  
