@@ -1,19 +1,322 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap');
+
 *{margin: 0; padding: 0;}
+html, body {height:100%;}
 h1 {font-family: "Noto Sans HK";}
-h2 {font-family: "Noto Sans HK";}
-h3 {font-family: "Noto Sans HK";}
-p {font-family: "Noto Sans HK";}
-.container
-.main
-.coordonées {font-family: "Noto Sans HK";}
-.right{font-family: "Noto Sans HK";}
-.left{font-family: "Noto Sans HK";}
-.expérience
-.formation
-.cmpnum
-.domaine
-.type
-.cmptech
-.Langues
-.int
+h4 {font-family: "Noto Sans HK";}
+h5 {font-family: "Noto Sans HK";}
+p {font-family: "Noto Sans HK"; font-size: 9pt;}
+
+.container {
+min-height:1120px;
+min-width:800px;
+}
+
+.main {
+	
+margin: 0px auto 0px auto;
+width: 800px;
+height: 1120px;
+padding: 0px;
+border: solid black ;
+padding-bottom: 0px;
+}
+
+
+.grid {
+
+margin: auto; 
+	padding: 0px;
+	display:grid; 
+	 grid-template-rows: repeat 250px, 200px 250px(5, 1fr) ;
+	 grid-template-areas: 
+". Entete ."
+". Formations ."
+". Expériences ."
+". numérique ."
+". techniques ."
+". tongue ." 
+". Intérêts .";
+grid-column-gap: 1px ;
+	grid-row-gap: 20px; 
+	   }
+
+
+.Entete {
+	margin: 45px 0px 0px 0px  ;
+	padding: 0px;
+	width: 800px ;
+	height:250px;
+	display: grid;
+	grid-template-columns: 20px 700px;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-area: "Entete";
+	grid-row: 1/2 ;
+
+}
+
+.motif{
+margin: 85px -40px 0px 310px;
+	grid-area: "motif"; 
+	grid-column: 2/2 ;
+	grid-row: 1/2 ; 
+}
+
+.coordonnées {
+	margin: 55px auto auto 45px;
+	padding-right :0px;
+		grid-area:"coordonnées"; 
+	grid-column: 1/2;
+	grid-row: 1/3; 
+	text-align: center;
+}
+.cer { 
+	margin: 0px auto auto 25px;
+	padding: 0px;
+	background-color: transparent;
+	 border: 3pt solid black; 
+	 border-radius: 210px; 
+	 width: 210px; 
+	 height: 210px;
+	 grid-area: "cer";
+grid-column: 1/2;
+grid-row: 1/3;
+}
+.cer2 { 
+margin: 10px auto auto 35px;
+padding: 0;
+	background-color: transparent;
+	 border: 1pt solid black;
+	  border-radius: 195px;
+	 width: 195px; 
+	 height: 195px;
+	  grid-area: "cer2"; 
+	  grid-column: 1/2 ;
+	  grid-row: 1/3; 
+	  }
+
+	 .line1{
+		margin: 0px 0px 0px 220px ;
+	 	padding:0px;
+	 	height: 2pt;
+	 	width:500px; 
+	 	background-color: black;
+	 	}
+
+	 .line2{
+		margin: -65px 0px 0px 240px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width:500px; 
+	 	background-color: black;
+	 	}
+
+	.line3{
+		margin: 36px 0px 0px 10px ;
+	 	padding:0px;
+	 	height: 2pt;
+	 	width:100px; 
+	 	background-color: black;
+	 	}
+ 	.line4{
+
+	 	margin: -40px 0px 0px 30px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width:66px; 
+	 	background-color: black;
+	 	}
+
+.Formations{
+	margin: -20px 0px 0px 0px;
+	padding:0px 0px 30px 0px;
+	width: 800px;
+	display: grid;
+	grid-row: 2/3;
+	grid-template-columns: 15% 20% 60%;
+	grid-template-rows: 20% 80%; 
+	}
+
+.Titreformation{ 
+	grid-area: "Titreformation"; 
+	grid-column: 1/3 ;
+	grid-row: 1/2 ; 
+padding: 0px 0px 0px 25px;}
+.date1{ 
+	grid-area: "date1";
+ grid-column: 2/3; 
+ grid-row: 2/2;  }
+.for{ 
+	grid-area: "for";
+	 grid-column: 3/3;
+	  grid-row: 2/2 ; }
+.line5{
+		margin: 15px 0px 0px -255px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;}
+
+.Expériences{
+	margin: -30px 0px 0px 0px;
+	padding:0px;
+	width: 800px;
+	display: grid;
+	grid-row: 3/4;
+	grid-template-columns: 15% 20% 60%;
+	grid-template-rows: 15% 85%;
+	grid-area: "Expériences";
+
+	}
+	.Titreexpérience { 
+		grid-area:"Titreexpérience"; 
+		grid-column: 1/3; 
+		grid-row: 1/2 ; 
+	padding: 0px 0px 0px 25px;}
+.date2 {
+	grid-area: "date2" ;
+ grid-column: 2/3;
+  grid-row: 2/2 ; 
+}
+.xp {
+ grid-area:"xp";
+ grid-column: 3/3;
+ grid-row: 2/2 ;
+}
+.line6{
+	margin: 15px 0px 0px -255px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;
+}
+
+
+.numérique{
+	margin:0px;
+	padding:0px;
+	display: grid;
+	grid-row: 4/5;
+	grid-template-columns: 35% 15% 15% 1fr;
+	grid-template-rows: 20% 80%;
+	grid-area: "numérique";
+
+	}
+	.cmpnum{
+	 grid-area:"cmpnum";
+	  grid-column: 1/4;
+	   grid-row: 1/2; 
+	   padding: 0px 0px 0px 25px;
+	}
+	.prem {
+ grid-area:"prem";
+ grid-column: 2/3;
+  grid-row: 1/2;
+   } 
+	.deuze { 
+	grid-area:"deuze";
+	grid-column: 3/4;
+	  grid-row: 1/2;
+	 }
+	.troize{
+	grid-area:"troize";
+	  grid-column: 4/4;
+	  grid-row: 1/2;
+	 }
+	.line7{
+	margin: 50px 0px 0px -495px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;}
+
+.techniques {
+	margin:0;
+	padding:0;
+	display: grid;
+	grid-row: 5/6;
+	grid-template-columns: 35% 15% 15% 1fr;
+	grid-template-rows: 20% 80%;
+	grid-area: "techniques";
+	}
+	.Titrecmptech{
+	 grid-area:"Titrecmptech"; 
+	 grid-column: 1/4; 
+	 grid-row:1/2;
+	 padding: 0px 0px 0px 25px;
+	}
+	.pro{
+		grid-area:"pro"; 
+		grid-row: 1/2;
+		 grid-column: 2/3;
+		}
+	.hob{
+		grid-area:"hob";
+		 grid-row: 1/2; 
+		 grid-column: 3/4;
+		}
+		 .line8{ margin: 35px 0px 0px -375px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;}
+	
+	.tongue{
+	margin:0;
+	padding:0;
+	display: grid;
+	grid-row: 6/7;
+	grid-template-columns: 35% 1fr 1fr 1fr;
+	grid-template-rows: 35% 65%;
+	grid-area: "tongue";
+	}
+	.Titrela { 
+		grid-area:"Titrela"; 
+		grid-row:1/2;
+		grid-column: 1/4; 
+		padding: 0px 0px 0px 25px; }
+	.Langues{ 
+		grid-area:"Langues" ; 
+		grid-row: 1/2;
+		 grid-column: 2/4;}
+		.line9{
+	margin: 40px 0px 0px -255px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;}
+
+.Intérêts{
+	margin:0;
+	padding:0;
+	display: grid;
+	grid-row: 7/8;
+	grid-template-columns: 35% 1fr 1fr 1fr;
+	grid-template-rows:20% 80%;
+	grid-area: "Intérêts";
+	}
+	.Titreint {
+	 grid-area:"Titreint"; 
+	 grid-column: 1/4;  
+	 grid-row: 1/2; 
+	 padding: 0px 0px 0px 25px;}
+	.int{ 
+	grid-area:"int"; 
+	grid-column: 2/3; 
+	grid-row: 1/2 ;
+	}
+	.line10{
+	margin: 20px 0px 0px -255px ;
+	 	padding:0px;
+	 	height: 1pt;
+	 	width: 750px; 
+	 	background-color: black;}
+
+
+
+
+
+
+
+
+
